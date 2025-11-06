@@ -1,0 +1,25 @@
+body {
+    background: #bbc7ff;
+    color: #000000;
+}
+
+p {
+    color: #000000;
+}
+
+footer {
+    height: 150px;
+    background: #fffc549a;
+    padding-top: 40px;
+    color: #a47f7f83;
+}
+.navbar  {
+    margin-top: -10px;
+}
+.me {
+    background: #f4f4f4af;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
