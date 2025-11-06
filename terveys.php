@@ -18,14 +18,14 @@
 <nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img src="kuva1.jpg" alt="Avatar Logo" class="rounded-pill" style="width:80px;">
+            <img src="saukko.jpg" alt="Avatar Logo" class="rounded-pill" style="width:80px;">
         </a>
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="terveys.php">Terveys</a>
+            <a class="nav-link" href="index.html">Koti</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Linkki 2</a>
+            <a class="nav-link" href="terveys.php">Terveys</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Linkki 3</a>
@@ -74,7 +74,7 @@
         <button type="button" method="submit" name="submit" class="nappi">Laske BMI</button><br><br>
 
         <?php
-            if($_GET['submit'])
+            if($_GET['submit'] == "pressed")
             {
                 $pituus = $_GET['pituus'];
                 $paino = $_GET['paino'];
@@ -100,7 +100,6 @@
             echo "BMI: $bmi<br>$luokka";
         }
         echo "kekw ei taia toimia";
-        echo $bmi;
         ?>
 
     </form>
