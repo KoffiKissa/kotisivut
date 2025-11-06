@@ -49,21 +49,22 @@
 <div class="container-md text-center">
     <h2>Liikunta lajit</h2>
 
-    <h3>Darts</h3>
+    <h3><a href="https://darts.fi/peliohjeet/" target="_blank">Darts</a></h3>
     <p>Darts on rento ja kevyttä liikuntaa tarjoava ajanvietteenäkin toimiva laji, jossa tarkoituksena on päästä 501 pisteestä
          mahdollisimman harvalla heitolla ja kopetus tapahtuu aina tuplaamalla.</p>
     <p>Dartsissa suurin osa liikunnasta tulee kävelyn muodossa taululle ja takaisin heittoviivalle.</p>
 
-    <h3>Jalkapallo</h3>
+    <h3><a href="https://www.palloliitto.fi/saannot-maaraykset-ja-ohjeet" target="_blank">Jalkapallo</a></h3>
     <p>Jalkapallo lienee meille kaikille tuttu laji, jossa juostaan pallonperässä pitkin kenttää koska joku sen aina potkii päin vittua kuitenkin.
         Liikunnallisesti jalkapallo on erittäin hyvä urheilumuoto, sillä tässä lajissa saa todellakin juosta.</p>
 
-    <h3>Kävely</h3>
+    <h3><a href="https://ukkinstituutti.fi/liikkuminen/liikuntalajit-ja-liikkumismuodot/kavely/?srsltid=AfmBOoqgoCrwkLCZCBW3lXayhKFwwFLvSq5B0E5hyuFxNTf_fFrHEVdb" target="_blank">Kävely</a></h3>
     <p>Kävely on yksi parhaista tavoista lisätä liikuntaa, se toimii todella hyvin ylläpitämään peruskuntoa, 
         jolloin se myös vähentää merkittävästi riskiä sairastua korkeaan verenpaineeseen ja moneen muuhunkin "kansantautiin".</p>
 </div>
 
 <div class="container-md text-center bmi">
+
     <h2>BMI laskuri</h2><br>
     
     <form method="get" action="terveys.php">
