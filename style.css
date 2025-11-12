@@ -29,6 +29,10 @@ button.nappi {
     color: #ffffff;
     border-width: 1px;
 }
+button.POISTA {
+    background: red;
+    color: black;
+}
 form {
     margin-bottom: 25px;
 }

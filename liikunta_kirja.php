@@ -54,7 +54,38 @@
             <input name=aika id=aika type=number><br><br>
             <label for=kalorit name=kalorit>Poltetut kalorit (kcal):</label><br>
             <input name=kalorit id=kalorit type=number><br><br>
-            <button method=submit type=button>Lisää päiväkirjaan</button>";
+            <button type=submit type=button>Lisää päiväkirjaan</button>
+            <button type=submit name=tulosta>Tulosta päiväkirja sivulle</button><br><br>
+            <button type=submit name=POISTA class=POISTA>Poista kirjan tiedot</button><br><br>";
+
+            if($_SERVER['REQUEST_METHOD'] === 'POST')
+            {
+                if (isset($_POST['tulosta']))
+                {
+                    echo "<textarea>", file_get_contents("data.txt"), "</textarea>";
+                }
+                else if (isset($_POST['POISTA']))
+                {
+                    file_put_contents("data.txt", "");
+                    echo "Tiedosto pyyhitty onnistuneesti!";
+                }
+                else
+                {
+                    $laji = $_POST['laji'];
+                    $aika = $_POST['aika'];
+                    $kalorit = $_POST['kalorit'];
+                    $uusi = "$laji;$aika;$kalorit\n";
+                    if ($laji == "" or $aika == "" or $kalorit == "")
+                    {
+                        echo "Täytäthän kaikki kentät ennenkuin koitat tallentaa tietoja!";
+                    }
+                    else
+                    {
+                    file_put_contents("data.txt", $uusi, FILE_APPEND);
+                    echo"paskasi on lisätty, nyt vittuun siitä";
+                    }
+                }
+            }
 
     ?>
 
