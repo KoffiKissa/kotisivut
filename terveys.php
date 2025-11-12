@@ -28,7 +28,7 @@
             <a class="nav-link" href="terveys.php">Terveys</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Linkki 3</a>
+            <a class="nav-link" href="liikunta_kirja.php">Liikunta päiväkirja</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Linkki 4</a>
@@ -67,45 +67,49 @@
 
     <h2>BMI laskuri</h2><br>
     
-    <form method="get" action="terveys.php">
-        <label for="paino">Painosi (kg):</label><br>
-        <input type="number" name="paino" id="paino"><br><br>
-        <label for="pituus">Pituutesi (cm):</label><br>
-        <input name="pituus" id="pituus" type="number"><br><br>
-        <button type="button" method="submit" name="submit" class="nappi">Laske BMI</button><br><br>
+    <form method="post" action="terveys.php">
 
         <?php
-            if($_GET['submit'] == "pressed")
+            echo "<label for=paino>Painosi (kg):</label><br>
+                <input type=number name=paino id=paino value=0><br><br>
+                <label for=pituus>Pituutesi (cm):</label><br>
+                <input name=pituus id=pituus type=number value=0><br><br>
+                <button method=submit name=submit>Laske BMI</button><br><br>";
+            if ($_POST['pituus'] != "" && $_POST['paino'] != "")
             {
-                $pituus = $_GET['pituus'];
-                $paino = $_GET['paino'];
+                if($_POST['pituus'] != 0 && $_POST['paino'] != 0)
+                {
+                $pituus = $_POST['pituus'];
+                $paino = $_POST['paino'];
 
-            function bmi_lasku($paino, $pituus) 
-            {
                 $pituus = $pituus / 100;
                 $bmi = $paino * 1.3 / pow($pituus, 2.5);
-                return $bmi;
+                if($bmi <=18.5) {
+                    $luokka = "Alipainoinen";
+                }
+                else if ($bmi > 18.5 & $bmi <= 24.9) {
+                    $luokka = "Normaalipainoinen";
+                }
+                else if ($bmi > 24.9) {
+                    $luokka = "Ylipainoinen";
+                }
+                echo "BMI: $bmi<br>$luokka";
             }
-
-            $bmi = bmi_lasku($paino, $pituus);
-
-            if($bmi <=18.5) {
-                $luokka = "Alipainoinen";
-            }
-            else if ($bmi > 18.5 & $bmi <= 24.9) {
-                $luokka = "Normaalipainoinen";
-            }
-            else if ($bmi > 24.9) {
-                 $luokka = "Ylipainoinen";
-            }
-            echo "BMI: $bmi<br>$luokka";
+            else {echo "Et voi painaa 0 kg tai olla 0cm pitkä!";}
         }
-        echo "kekw ei taia toimia";
+
         ?>
 
     </form>
 
 </div>
+
+<div class="container-md text-center diary">
+
+        <h2><a href="liikunta_kirja.php">Liikunta päiväkirja</a></h2><br>
+
+</div>
+
 </body>
 
 <footer class="container-fluid text-center">

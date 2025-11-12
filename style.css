@@ -29,3 +29,9 @@ button.nappi {
     color: #ffffff;
     border-width: 1px;
 }
+form {
+    margin-bottom: 25px;
+}
+.kirja {
+    margin-bottom: 25px;
+}
