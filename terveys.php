@@ -33,6 +33,9 @@
         <li class="nav-item">
             <a class="nav-link" href="yhteys.php">Ota yhteyttä</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tietovisa.php">Tietovisa</a>
+        </li>
         </ul>
     </div>
 </nav>

@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Ota Yhteyttä</title>
+    <title>Tietovisa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
 
 <div>
-    <h2 class="container-fluid p-3 text-center bg-primary">Ota yhteyttä</h2>
+    <h2 class="container-fluid p-3 text-center bg-primary">Tietovisa</h2>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
@@ -43,39 +43,55 @@
     </div>
 </nav>
 
-<div class="container-md text-center">
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 1</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-    <h2>Ota yhteyttä</h2><br>
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 2</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-    <form method="post" action="yhteys.php">
-        <label for="nimi" name="nimi">Nimesi:</label><br>
-        <input name="nimi" id="nimi" type=><br><br>
-        <label for="palaute" name="palaute">Asiasi:</label><br>
-        <input name="palaute" id="palaute"><br><br>
-        <button type="submit" class="nappi">Lähetä palaute</button><br><br>
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 3</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-    </form>
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 4</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-    <?php
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 5</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST')
-        {
-            $nimi = htmlspecialchars($_POST['nimi']);
-            $sanoma = htmlspecialchars($_POST['palaute']);
-            $to = "arttu.tuhkanen@edu.sakky.fi";
-            $subject = "Tämä on testi";
-            $message = wordwrap($sanoma, 70);
-            $headers = "From: arttu.elias.tuhkanen@gmail.com" . "\r\n" . "Reply-To: vamos.kkona@gmail.com";
-            if ($nimi != "" && $sanoma != "")
-            {
-                echo "<h2>Palautteesi:</h2><br>$sanoma<br>Lähettäjä: $nimi";
-                mail($to, $subject, $message, $headers);
-            }
-        }
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 6</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-    ?>
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 7</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
-    </div>
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 8</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
+
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 9</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
+
+<div class="container-md text-center kysymys">
+    <h3>Kysymys 10</h3><br>
+    <p>Väärin tai Oikein</p>
+</div>
 
 </body>
 

@@ -30,7 +30,7 @@ button.nappi {
     border-width: 1px;
 }
 button.POISTA {
-    background: red;
+    background: rgb(255, 0, 225);
     color: black;
     border-width: 1px;
 }
@@ -39,4 +39,8 @@ form {
 }
 .kirja {
     margin-bottom: 25px;
+}
+div.kysymys {
+    background: #000000;
+    color: #ffffff;
 }
