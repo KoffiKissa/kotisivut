@@ -25,13 +25,14 @@ footer {
     padding-top: 5px;
 }
 button.nappi {
-    background: #000000;
-    color: #ffffff;
+    background: #00e5ff;
+    color: #000000;
     border-width: 1px;
 }
 button.POISTA {
     background: red;
     color: black;
+    border-width: 1px;
 }
 form {
     margin-bottom: 25px;

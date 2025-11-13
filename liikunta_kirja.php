@@ -34,7 +34,7 @@
             <a class="nav-link" href="liikunta_kirja.php">Liikunta päiväkirja</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Linkki 4</a>
+            <a class="nav-link" href="yhteys.php">Ota yhteyttä</a>
         </li>
         </ul>
     </div>
@@ -54,8 +54,8 @@
             <input name=aika id=aika type=number><br><br>
             <label for=kalorit name=kalorit>Poltetut kalorit (kcal):</label><br>
             <input name=kalorit id=kalorit type=number><br><br>
-            <button type=submit type=button>Lisää päiväkirjaan</button>
-            <button type=submit name=tulosta>Tulosta päiväkirja sivulle</button><br><br>
+            <button type=submit type=button class=nappi>Lisää päiväkirjaan</button>
+            <button type=submit name=tulosta class=nappi>Tulosta päiväkirja sivulle</button><br><br>
             <button type=submit name=POISTA class=POISTA>Poista kirjan tiedot</button><br><br>";
 
             if($_SERVER['REQUEST_METHOD'] === 'POST')
@@ -82,7 +82,7 @@
                     else
                     {
                     file_put_contents("data.txt", $uusi, FILE_APPEND);
-                    echo"paskasi on lisätty, nyt vittuun siitä";
+                    echo"Lisätty onnistuneesti!";
                     }
                 }
             }

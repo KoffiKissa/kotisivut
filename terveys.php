@@ -31,7 +31,7 @@
             <a class="nav-link" href="liikunta_kirja.php">Liikunta päiväkirja</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Linkki 4</a>
+            <a class="nav-link" href="yhteys.php">Ota yhteyttä</a>
         </li>
         </ul>
     </div>
@@ -74,7 +74,7 @@
                 <input type=number name=paino id=paino value=0><br><br>
                 <label for=pituus>Pituutesi (cm):</label><br>
                 <input name=pituus id=pituus type=number value=0><br><br>
-                <button method=submit name=submit>Laske BMI</button><br><br>";
+                <button method=submit class=nappi>Laske BMI</button><br><br>";
             if ($_POST['pituus'] != "" && $_POST['paino'] != "")
             {
                 if($_POST['pituus'] != 0 && $_POST['paino'] != 0)
