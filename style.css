@@ -41,6 +41,25 @@ form {
     margin-bottom: 25px;
 }
 div.kysymys {
-    background: #000000;
+    background: #0066ff;
     color: #ffffff;
+    padding: 20px;
+}
+button.kysymys {
+    background: #be06a2;
+    color: #ffffff;
+    border-width: 7px;
+    border-color: #34a180;
+    width: 350px;
+    height: 40px;
+    margin: 5px;
+}
+button.tulos {
+    background: #be06a2;
+    color: #ffffff;
+    border-width: 7px;
+    border-color: #34a180;
+    width: 350px;
+    height: 40px;
+    margin: 5px;
 }
