@@ -65,7 +65,7 @@
             {
                 if (isset($_POST['tulosta']))
                 {
-                    echo "<textarea>", file_get_contents("data.txt"), "</textarea>";
+                    echo "<textarea rows=5>", file_get_contents("data.txt"), "</textarea>";
                 }
                 else if (isset($_POST['POISTA']))
                 {
