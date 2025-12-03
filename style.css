@@ -40,26 +40,30 @@ form {
 .kirja {
     margin-bottom: 25px;
 }
+button.kysymys {
+    background: #1500ff;
+    color: #000000;
+    border-width: 1px;
+    width: 200px;
+    margin-bottom: 10px;
+    pointer-events: visibleFill;
+}
 div.kysymys {
     background: #0066ff;
-    color: #ffffff;
+    color: #000000;
     padding: 20px;
 }
-button.kysymys {
-    background: #be06a2;
-    color: #ffffff;
-    border-width: 7px;
-    border-color: #34a180;
-    width: 350px;
-    height: 40px;
-    margin: 5px;
+.correct {
+    background: #00ff00;
 }
-button.tulos {
-    background: #be06a2;
-    color: #ffffff;
-    border-width: 7px;
-    border-color: #34a180;
-    width: 350px;
-    height: 40px;
-    margin: 5px;
+.incorrect {
+    background: #ff0000;
+}
+.locked {
+    pointer-events: none;
+    opacity: 0.6;
+}
+#score {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
